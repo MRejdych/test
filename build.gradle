@@ -1,0 +1,10 @@
+buildscript {
+    repositories {
+        mavenLocal()
+    }
+    dependencies {
+        classpath "rejdych.marcin:versioning-plugin:0.0.1"
+    }
+}
+
+apply plugin: "rejdych.marcin.versioning-plugin"
