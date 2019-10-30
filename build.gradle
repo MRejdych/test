@@ -8,3 +8,5 @@ buildscript {
 }
 
 apply plugin: "rejdych.marcin.versioning-plugin"
+
+println(version)
