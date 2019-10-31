@@ -1,12 +1,25 @@
 buildscript {
     repositories {
         mavenLocal()
+        mavenCentral()
     }
     dependencies {
         classpath "rejdych.marcin:versioning-plugin:0.0.1"
     }
 }
 
-apply plugin: "rejdych.marcin.versioning-plugin"
+plugins {
+    id "java"
+}
+
+repositories {
+    mavenCentral()
+}
+
+apply plugin: "rejdych.marcin.versioning"
 
 println(version)
+
+dependencies {
+    compile group: 'com.google.inject', name: 'guice', version: '4.2.2'
+}
